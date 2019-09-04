@@ -154,43 +154,7 @@ def inversao():
 
 #pop_nova = []
 #adap_nova = adap
-'''
-for i in range(0,8):
-	arr = []
-	for j in range(0,10):
-		arr.append(1)
-	pop_nova.append(arr)
 
-def nova_pop():
-	for i in range(0,2):
-		for j in range(0,10):
-			pop_nova[i][j] = pop_sel[i][j]
-	for i in range(2,4):
-		for j in range(0,10):
-			pop_nova[i][j] = pop_des[i][j]
-	for i in range(4,6):
-		for j in range(0,10):
-			pop_nova[i][j] = pop_mut[i][j]
-	for i in range(6,8):
-		for j in range(0,10):
-			pop_nova[i][j] = pop_inv[i][j]
-
-	for i in range(0, 8):
-		for j in range(0,9):
-			if pop_nova[i][j] == 0 and pop_nova[i][j+1] == 1:
-				adap_nova[i] = adap_nova[i + 1]
-	for i in range(0,7):
-		for j in range(i+1,8):
-			if adap_nova[i] < adap_nova[j]:
-				cromossomo = pop_nova[i]
-				pop_nova[i] = pop_nova[j]
-				pop_nova[j] = cromossomo
-				aux = adap_nova[i]
-				adap_nova[i] = adap_nova[j]
-				adap_nova[j] = aux
-	for i in range(0,5):
-		for j in range(0,10):
-			pop[i][j] = pop_nova[i][j]'''
 gera_pop()
 imprime_pop()
 adaptacao()
